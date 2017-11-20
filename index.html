@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>Firmstep Test</title>
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 filters-col">
+				<div class="filters">
+					<form>
+						<div class="filter-criteria">
+							<span>Manufacturer</span>
+							<label><input name="Manufacturer" value="Apple" type="checkbox">Apple</label>
+							<label><input name="Manufacturer" value="Samsung" type="checkbox" value="samsung">Samsung</label>
+							<label><input name="Manufacturer" 
+							 value="HTC" type="checkbox">HTC</label>
+							<label><input name="Manufacturer" value="Nokia" type="checkbox">Nokia</label>
+							<label><input name="Manufacturer" value="ZTE" type="checkbox">ZTE</label>
+							<label><input name="Manufacturer" value="Sony" type="checkbox">Sony</label>
+						</div>
+						<div class="filter-criteria">
+							<span>Storage</span>
+							<label><input name="Storage" value="16" type="checkbox">16 GB</label>
+							<label><input name="Storage" value="32" type="checkbox">32 GB</label>
+						</div>
+						<div class="filter-criteria">
+							<span>OS</span>
+							<label><input name="OS" value="Android" type="checkbox">Android</label>
+							<label><input name="OS" value="iOS" type="checkbox">iOS</label>
+							<label><input name="OS" value="Windows" type="checkbox">Windows</label>
+						</div>
+						<div class="filter-criteria">
+							<span>Camera</span>
+							<label><input name="Camera" value="5" type="checkbox">5 Mpx</label> 
+							<label><input name="Camera" value="8" type="checkbox">8 Mpx</label>
+							<label><input name="Camera" value="12" type="checkbox">12 Mpx</label>
+							<label><input name="Camera" value="15" type="checkbox">15 Mpx</label>
+						</div>
+						<button id="clear-check">Clear filters</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-md-10">
+				<div class="alert alert-danger">
+  					<strong>Ooops!</strong> Sorry, this phone does not exist
+				</div>
+				<!-- Product Snippent -->
+				<ul class="products-list">
+				</ul>
+				<!-- End of Product -->
+			</div>
+
+		</div>
+	</div>
+	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
